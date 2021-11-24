@@ -20,13 +20,17 @@
             gesture-detector
         >
             
-            <a-nft
-                type="nft"
-                url="https://arjs-cors-proxy.herokuapp.com/https://raw.githack.com/Vaeaelen/JRLMockUp2a2cfp9/assets/MARKER2"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
+            <a-marker
+                id="animated-marker"
+                type="pattern"
+                preset="custom"
+                url="assets/marker.patt"
+                raycaster="objects: .clickable"
+                emitevents="true"
+                cursor="fuse: false; rayOrigin: mouse;"
+                id="markerA"
+            >
+
 
                 <a-entity
                     gltf-model="assets/asset.gltf"
@@ -35,7 +39,7 @@
                     rotation="-90 0 0"
                     
                 ></a-entity>
-            </a-nft>
+            </a-marker>
 
             <a-entity camera></a-entity>
         </a-scene>
