@@ -32,16 +32,7 @@
                 smoothCount="10"
                 smoothTolerance=".01"
                 smoothThreshold="5">
-            <a-marker
-                id="animated-marker"
-                type="pattern"
-                preset="custom"
-                url="assets/marker.patt"
-                raycaster="objects: .clickable"
-                emitevents="true"
-                cursor="fuse: false; rayOrigin: mouse;"
-                id="markerA"
-            >
+
                 <a-entity
                     id="bowser-model"
                     scale="0.037629630017734526 0.037629630017734526 0.037629630017734526"
@@ -51,7 +42,7 @@
                     class="clickable"
                     gesture-handler
                 ></a-entity>
-            </a-marker>
+            </a-nft>
 
             <a-entity camera></a-entity>
         </a-scene>
